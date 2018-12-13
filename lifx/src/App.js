@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/lab/Slider';
 
@@ -35,7 +34,7 @@ class App extends Component {
       colors: 'blue',
       periods: 0,
       cycles: 0,
-      value: 0.0,
+      value: 0.5,
 
     }
     this.onOff = this.onOff.bind(this);

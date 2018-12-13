@@ -5,8 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.6.2",
     "@material-ui/lab": "^3.0.0-alpha.25",
-    "rc-slider": "^8.6.4",
-    "rc-tooltip": "^3.7.3",
+    "ajv": "^6.6.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
