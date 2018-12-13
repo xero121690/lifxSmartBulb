@@ -1,0 +1,75 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+
+
+class App extends Component {
+
+  constructor () {
+    super();
+    this.state = {
+      data: 'notClicked',
+      token: 'ca7e91738aa005a4e52284973258a07c13a64d6714e3d0e7d458f0891c025223',
+      API: '',
+      dataToSend: {
+        "period": 2,
+        "cycles": 5,
+        "color": "purple",
+      },
+
+    }
+    this.clicking = this.clicking.bind(this);
+  }
+
+ clicking (e) {
+   e.preventDefault();
+   this.setState({ data: 'clicked'})
+   let dataTo = {
+    "period": 2,
+    "cycles": 5,
+    "color": "purple",
+  }
+   fetch('https://api.lifx.com/v1/lights/all/effects/breathe', {
+   method: 'POST', 
+   body: JSON.stringify(this.state.dataToSend),
+   headers: new Headers({
+     'Authorization': `Bearer ${this.state.token}`,
+     'Content-Type': 'application/json'
+   }),
+  })
+    .then((response) => response)
+    .then((responseJson) => {
+      // return responseJson.movies;
+      console.log(responseJson);
+      return 
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
+
+
+
+
+
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+        <button onClick={this.clicking}>Turn off the lights</button>
+        <div>{this.state.data} </div>
+      </div>
+    );
+  }
+}
+
+export default App;
