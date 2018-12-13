@@ -5,8 +5,26 @@ class AboutUs extends Component {
 	render() {
 		return (
 		<div>
-			<h2>HI</h2>
-				<p>dasdasda</p>
+		<div>
+			<h2>Misa Vargas Flores</h2>
+				<p>Web Developer</p>
+		</div>
+		<div>
+			<h2>Luis Chocoj</h2>
+				<p>Web Developer</p>
+		</div>
+		<div>
+			<h2>Omar Alhinnawi</h2>
+				<p>Web Developer</p>
+		</div>
+		<div>
+			<h2>Jeffrey Garcia</h2>
+				<p>Web Developer</p>
+		</div>
+		<div>
+			<h2>Mshari Alqahtani</h2>
+				<p>Web Developer</p>
+		</div>
 		</div>
 		)
 	}

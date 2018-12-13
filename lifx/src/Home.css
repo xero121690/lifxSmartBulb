@@ -1,0 +1,38 @@
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+img {
+	height: 100%;
+	width: 100%
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.container::after {
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+}
+
+.top-left {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 50px;
+	font-weight: 50;
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+button {
+	font-family: 'Open Sans Condensed', sans-serif;
+	background: #1a73ab;
+	font-size: 30px;
+	color: #fff;
+	border: none;
+	position: absolute;
+	top: 80px;
+	left: 16px;
+}

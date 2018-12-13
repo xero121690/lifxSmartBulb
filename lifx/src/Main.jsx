@@ -14,11 +14,8 @@ import "./Main.css";
 class Main extends Component { render() { return (
 <HashRouter>
 	<div>
-		<h1>LIFX Control</h1>
 		<ul className="header">
-			<li>
-				<NavLink to="/">Home</NavLink>
-			</li>
+				<NavLink to="/Home"><h3>LIFX Control</h3></NavLink>
 			<li>
 				<NavLink to="/App">App</NavLink>
 			</li>
