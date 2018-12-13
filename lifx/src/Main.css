@@ -1,6 +1,6 @@
 body {
 
-	background-color: #FFCC00;
+	background-color: #ffffff;
 
 	padding: 20px;
 
@@ -14,11 +14,12 @@ p,
 ul,
 li {
 
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 
 }
 
 h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
 	padding: 0px 20px;
 	font-weight: 900;
@@ -60,8 +61,6 @@ ul.header li a {
 .content {
 
 	background-color: #FFF;
-
-	padding: 20px;
 
 }
 

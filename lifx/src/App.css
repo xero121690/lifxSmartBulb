@@ -26,12 +26,3 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-button {
-	font-family: 'Open Sans Condensed', sans-serif;
-	background: #1a73ab;
-	font-size: 30px;
-	color: #fff;
-	border: none;
-	position: relative;
-}

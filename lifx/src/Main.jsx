@@ -9,10 +9,12 @@ import AboutUs from "./AboutUs";
 import App from "./App";
 import "./App.css";
 import "./Main.css";
+import scrollToComponent from 'react-scroll-to-component';
 
 class Main extends Component { render() { return (
 <HashRouter>
 	<div>
+		<Home/>
 		<ul className="header">
 				<NavLink to="/Home"><h3>LIFX Control</h3></NavLink>
 			<li>

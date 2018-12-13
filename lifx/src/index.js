@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './Main'
+import Main from './Main';
+import Home from './Home';
 import registerServiceWorker from './registerServiceWorker';
 
 
