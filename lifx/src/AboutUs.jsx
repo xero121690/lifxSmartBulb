@@ -19,9 +19,9 @@ class AboutUs extends Component {
 					<div className="row">
 						<div className="column" >
 							<div className="card" >
-								<img src={Misael} alt="Jane" width="300" height="250" className="aboutImg"/>
+								<img src={Misael} alt="Jane" width="250" height="250" className="aboutImg"/>
 								<div className="container" >
-									<h2>Jane Doe</h2>
+									<h2>Misael Chocoj</h2>
 									<p className="title">CEO &amp; Founder</p>
 									<p>Some text that describes me lorem ipsum ipsum lorem.</p>
 									<p>example@example.com</p>
@@ -33,7 +33,7 @@ class AboutUs extends Component {
 							<div className="card" >
 								<img src={Jeff} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
-									<h2>Mike Ross</h2>
+									<h2>Jeffrey Garcia</h2>
 									<p className="title">Art Director</p>
 									<p>Some text that describes me lorem ipsum ipsum lorem.</p>
 									<p>example@example.com</p>
@@ -44,7 +44,7 @@ class AboutUs extends Component {
 							<div className="card" >
 								<img src={Luis} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
-									<h2>John Doe</h2>
+									<h2>Luis Chocoj</h2>
 									<p className="title">Designer</p>
 									<p>Some text that describes me lorem ipsum ipsum lorem.</p>
 									<p>example@example.com</p>
@@ -55,7 +55,7 @@ class AboutUs extends Component {
 							<div className="card" >
 								<img src={Omar} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
-									<h2>John Doe</h2>
+									<h2>Omar Alhinnawi</h2>
 									<p className="title">Designer</p>
 									<p>Some text that describes me lorem ipsum ipsum lorem.</p>
 									<p>example@example.com</p>
@@ -66,7 +66,7 @@ class AboutUs extends Component {
 							<div className="card" >
 								<img src={squid} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
-									<h2>John Doe</h2>
+									<h2>Mshari Alqahtani</h2>
 									<p className="title">Designer</p>
 									<p>Some text that describes me lorem ipsum ipsum lorem.</p>
 									<p>example@example.com</p>
