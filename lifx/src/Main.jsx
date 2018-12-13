@@ -27,7 +27,7 @@ class Main extends Component { render() { return (
 			<Route path="/Home" component={Home}/>
 			<Route path="/App" component={App}/>
 			<Route path="/AboutUs" component={AboutUs}/>
-			<Redirect path="*" component={Home} /> 
+			<Route path="*" component={Home} /> 
 			{/* fix the redirection */}
 		</div>
 	</div>
