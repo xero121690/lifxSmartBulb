@@ -136,7 +136,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to LIFX Control</h1>
         </header>
         <p className="App-intro">
-          To get started, head on over to the LIFX tab.
+         Welcome
         </p>
         {/* breathing options here */}
         <div id="breath" >

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
 	Route,
 	NavLink,
-	HashRouter
+	HashRouter,
+	Redirect
 } from "react-router-dom";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
@@ -14,9 +15,9 @@ class Main extends Component { render() { return (
 <HashRouter>
 	<div>
 		<ul className="header">
-				<NavLink to="/Home"><h3>LIFX Control</h3></NavLink>
+				<NavLink to="/Home"><h3>Home</h3></NavLink>
 			<li>
-				<NavLink to="/App">App</NavLink>
+				<NavLink to="/App">LIFX Control</NavLink>
 			</li>
 			<li>
 				<NavLink to="/AboutUs">About Us</NavLink>
@@ -26,6 +27,8 @@ class Main extends Component { render() { return (
 			<Route path="/Home" component={Home}/>
 			<Route path="/App" component={App}/>
 			<Route path="/AboutUs" component={AboutUs}/>
+			<Redirect path="*" component={Home} /> 
+			{/* fix the redirection */}
 		</div>
 	</div>
 </HashRouter>
