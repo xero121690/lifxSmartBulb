@@ -10,15 +10,14 @@ import AboutUs from "./AboutUs";
 import App from "./App";
 import "./App.css";
 import "./Main.css";
-import scrollToComponent from 'react-scroll-to-component';
 
 class Main extends Component { render() { return (
 <HashRouter>
 	<div>
 		<ul className="header">
-				<NavLink to="/Home"><h3>Home</h3></NavLink>
+				<NavLink to="/Home"><h3>LIFX Control</h3></NavLink>
 			<li>
-				<NavLink to="/App">LIFX Control</NavLink>
+				<NavLink to="/App">Light Controls</NavLink>
 			</li>
 			<li>
 				<NavLink to="/AboutUs">About Us</NavLink>

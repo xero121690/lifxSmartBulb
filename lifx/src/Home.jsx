@@ -14,7 +14,7 @@ class Home extends Component {
 		return (
 		<div>
 			<div class="imgContainer">
-			<div class="top-left">Control from a distance.</div>
+			<div class="top-left">Control your lights anywhere.</div>
 				<img src={image} className="homeImg"></img>
 				<NavLink to="/App"><button class="button">Access Light Controls</button></NavLink>
 			</div>
