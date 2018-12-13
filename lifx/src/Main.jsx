@@ -14,7 +14,6 @@ import scrollToComponent from 'react-scroll-to-component';
 class Main extends Component { render() { return (
 <HashRouter>
 	<div>
-		<Home/>
 		<ul className="header">
 				<NavLink to="/Home"><h3>LIFX Control</h3></NavLink>
 			<li>
