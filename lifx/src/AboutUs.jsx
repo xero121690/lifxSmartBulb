@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './style.css';
 import squid from './squid.jpg';
+import Luis from './luis.png';
+import Jeff from './jeff.jpg';
+import Omar from './omar.jpg';
+import Misael from './misael.png';
 
 
 class AboutUs extends Component {
@@ -15,7 +19,7 @@ class AboutUs extends Component {
 					<div className="row">
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane" width="300" height="250" className="aboutImg"/>
+								<img src={Misael} alt="Jane" width="300" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>Jane Doe</h2>
 									<p className="title">CEO &amp; Founder</p>
@@ -27,7 +31,7 @@ class AboutUs extends Component {
 
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
+								<img src={Jeff} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>Mike Ross</h2>
 									<p className="title">Art Director</p>
@@ -38,7 +42,7 @@ class AboutUs extends Component {
 						</div>
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
+								<img src={Luis} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>John Doe</h2>
 									<p className="title">Designer</p>
@@ -49,7 +53,7 @@ class AboutUs extends Component {
 						</div>
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
+								<img src={Omar} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>John Doe</h2>
 									<p className="title">Designer</p>
@@ -60,7 +64,7 @@ class AboutUs extends Component {
 						</div>
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
+								<img src={squid} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>John Doe</h2>
 									<p className="title">Designer</p>

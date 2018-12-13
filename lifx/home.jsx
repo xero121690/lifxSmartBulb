@@ -9,10 +9,10 @@ class Main extends Component { render() { return (
 		<h1>LIFX Control</h1>
 		<ul className="header">
 			<li>
-				<navLink to="/">Home</NavLink>
+				<navLink to="/">Home</navLink>
 			</li>
 			<li>
-				<navLink to="/About Us">Home</NavLink>
+				<navLink to="/About Us">Home</navLink>
 			</li>
 		</ul>
 		<div className="content">

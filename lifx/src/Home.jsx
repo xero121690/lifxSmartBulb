@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import scrollToComponent from 'react-scroll-to-component';
-import ReactDOM from "react-dom";
+
 import image from "./livingroom.jpg";
 import "./Home.css";
 import App from "./App";
@@ -20,7 +19,7 @@ class Home extends Component {
 				<NavLink to="/App"><button class="button">Access Light Controls</button></NavLink>
 			</div>
 			<div>
-				
+
 			</div>
 		</div>
 		)
