@@ -15,7 +15,7 @@ class AboutUs extends Component {
 					<div className="row">
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane" width="300" height="250"/>
+								<img src={squid} alt="Jane" width="300" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>Jane Doe</h2>
 									<p className="title">CEO &amp; Founder</p>
@@ -27,7 +27,7 @@ class AboutUs extends Component {
 
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250"/>
+								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>Mike Ross</h2>
 									<p className="title">Art Director</p>
@@ -38,7 +38,7 @@ class AboutUs extends Component {
 						</div>
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250"/>
+								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>John Doe</h2>
 									<p className="title">Designer</p>
@@ -49,7 +49,7 @@ class AboutUs extends Component {
 						</div>
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250"/>
+								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>John Doe</h2>
 									<p className="title">Designer</p>
@@ -60,7 +60,7 @@ class AboutUs extends Component {
 						</div>
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="400" height="250"/>
+								<img src={squid} alt="Jane"  width="400" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>John Doe</h2>
 									<p className="title">Designer</p>

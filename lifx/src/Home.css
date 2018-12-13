@@ -2,7 +2,7 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-img {
+.homeImg {
 	height: 100%;
 	width: 100%
 }
@@ -26,13 +26,3 @@ img {
 	left: 16px;
 }
 
-button {
-	font-family: 'Open Sans Condensed', sans-serif;
-	background: #1a73ab;
-	font-size: 30px;
-	color: #fff;
-	border: none;
-	position: absolute;
-	top: 80px;
-	left: 16px;
-}

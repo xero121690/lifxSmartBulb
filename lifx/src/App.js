@@ -7,16 +7,16 @@ import Slider from '@material-ui/lab/Slider';
 const slider = {
 
   width: 400,
-  justifyContent: 'center', 
-alignItems: 'center',
-display: 'inline-block',
-  };
+  justifyContent: 'center',
+  alignItems: 'center',
+  display: 'inline-block',
+};
 
-  const divOuter = {
- 
-    justifyContent: 'center', 
-  alignItems: 'center' 
-    };
+const divOuter = {
+
+  justifyContent: 'center',
+  alignItems: 'center'
+};
 
 
 class App extends Component {

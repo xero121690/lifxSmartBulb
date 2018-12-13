@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import ReactDOM from "react-dom";
 import image from "./livingroom.jpg";
 import "./Home.css";
 import {
@@ -11,7 +13,7 @@ class Home extends Component {
 		<div>
 			<div class="container">
 			<div class="top-left">Control from a distance.</div>
-				<img src={image}></img>
+				<img src={image} className="homeImg"></img>
 				<NavLink to="/App"><button>Access Light Controls</button></NavLink>
 			</div>
 			<div>
