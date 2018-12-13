@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './style.css';
-import squid from './squid.jpg';
 import Luis from './luis.png';
 import Jeff from './jeff.jpg';
 import Omar from './omar.jpg';
 import Misael from './misael.png';
+import Mshari from './Mshari.png';
 
 
 class AboutUs extends Component {
@@ -63,7 +63,7 @@ class AboutUs extends Component {
 						</div>
 						<div className="column" >
 							<div className="card" >
-								<img src={squid} alt="Jane"  width="300" height="250" className="aboutImg"/>
+								<img src={Mshari} alt="Jane"  width="300" height="250" className="aboutImg"/>
 								<div className="container" >
 									<h2>Mshari Alqahtani</h2>
 									<p className="title">Designer</p>

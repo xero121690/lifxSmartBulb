@@ -19,6 +19,9 @@ const divOuter = {
 };
 
 
+
+
+
 class App extends Component {
 
   constructor () {
@@ -26,15 +29,11 @@ class App extends Component {
     this.state = {
       token: 'ca7e91738aa005a4e52284973258a07c13a64d6714e3d0e7d458f0891c025223',
       API: '',
-      dataToSend: {
-        period: 0,
-        cycles: 0,
-        color: 'purple',
-      },
       colors: 'blue',
-      periods: 0,
-      cycles: 0,
+      periods: 1,
+      cycles: 1,
       value: 0.5,
+      chooseColor: 'red',
 
     }
     this.onOff = this.onOff.bind(this);
@@ -42,6 +41,7 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSlider = this.handleSlider.bind(this);
     this.setTheState = this.setTheState.bind(this);
+    this.pickColor = this.pickColor.bind(this);
   }
 
  onOff (e) {
@@ -91,6 +91,30 @@ class App extends Component {
    setTheState () {
     let dataState =  {
       brightness: this.state.value,
+      fast: false
+  }
+    fetch('https://api.lifx.com/v1/lights/label:Lamp/state', {
+    method: 'PUT', 
+    body: JSON.stringify(dataState),
+    headers: new Headers({
+      'Authorization': `Bearer ${this.state.token}`,
+      'Content-Type': 'application/json'
+    }),
+   })
+     .then((response) => response)
+     .then((responseJson) => {
+       // return responseJson.movies;
+       console.log(responseJson);
+       return 
+     })
+     .catch((error) => {
+       console.error(error);
+     });
+   }
+
+   pickColor () {
+    let dataState =  {
+      color: this.state.chooseColor,
       fast: false
   }
     fetch('https://api.lifx.com/v1/lights/label:Lamp/state', {
@@ -175,21 +199,35 @@ class App extends Component {
             <option value={9}>9</option>
           </select>
           <br />
-          <button onClick={this.breath}>Breath</button>
+          <button onClick={this.breath}>Breathe</button>
           {/* you can do a button onClick hit the API */}
           {/* creating a line */}
           <hr/>
    
         </div>
+
         <div id="power">
           <label>Toggle Power: </label>
           <br />
           <button onClick={this.onOff}>Turn On/Off</button>
         </div>
-        <hr />
+      
 
+        <div id="permanentColor">
+       <hr id="here" />
+          <label> Permanent Color: </label>
+          <select value={this.state.chooseColor} onChange={this.handleChange('chooseColor')}>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+            <option value="red">Red</option>
+          </select>
+          <br/>
+          <button onClick={this.pickColor}>Set The Color</button>
+          </div>
+          <hr />
      
-        <div id="power" style={divOuter}>
+        <div id="slider" style={divOuter}>
           <label>Slider: </label>
           <br />
           <div style={slider}>
@@ -204,12 +242,13 @@ class App extends Component {
           step={.1}
         />
         <br />
-          <button onClick={this.setTheState}>Set The State</button>
+          <button onClick={this.setTheState}>Set The Brightness</button>
         </div>
+       <br />
+       <br/>
        
       </div>
         </div>
-        <hr />
       </div>   
     );
   }
