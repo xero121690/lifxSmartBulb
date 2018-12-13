@@ -11,9 +11,8 @@ class AboutUs extends Component {
 	render () {
 		return (
 			<div id="aboutus">
-				<h2>Responsive "Meet The Team" Section</h2>
+				<h2 align="center">"Meet The Team"</h2>
 				<br></br>
-				<p>Resize the browser window to see the effect.</p>
 				<br></br>
 				<div>
 					<div className="row">
